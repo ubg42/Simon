@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-ok="0" data-scrolling="0" data-audio="1" data-loading="1" data-subpage="0" data-subfolder="simons/" data-nav="1">
+<head>
+
+
+<!-- 🏷 misc metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,shrink-to-fit=no,maximum-scale=1.0,user-scalable=no,interactive-widget=resizes-content">
+<title>SIMONS 🟥🟦🟨🟩 memory game</title>
+<meta name="description" content="Featuring Simon, Simon, Simon… and of course Simon.">
+<link rel="canonical" href="https://vole.wtf/simons/">
+<link rel="license" href="https://vole.wtf/blah/#copyright">
+<base target="_top">
+
+<!-- 👤 social -->
+<meta name="fediverse:creator" content="@VOLEwtf@crispsandwi.ch">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VOLE.wtf">
+<meta property="og:title" content="SIMONS 🟥🟦🟨🟩 memory game">
+<meta property="og:description" content="Featuring Simon, Simon, Simon… and of course Simon.">
+<meta property="og:image" content="https://vole.wtf/simons/social.jpg">
+<meta property="og:url" content="https://vole.wtf/simons/">
+<meta property="og:locale" content="en_GB">
+
+<!-- 🖼 icons etc -->
+<link rel="icon" href="https://vole.wtf/favicon.png">
+<link rel="apple-touch-icon" href="https://vole.wtf/apple-touch-icon.png">
+<meta name="theme-color" content="#412A0F">
+<meta name="color-scheme" content="only light">
+
+<!-- 🤖 schema -->
+<script type="application/ld+json">
+	{"@context":"https:\/\/schema.org","@graph":[{"@type":"Organization","@id":"https:\/\/vole.wtf\/#\/schema\/organization\/1","url":"https:\/\/vole.wtf\/","name":"VOLE.wtf","logo":{"@type":"ImageObject","@id":"https:\/\/vole.wtf\/#\/schema\/image\/icon","url":"https:\/\/vole.wtf\/apple-touch-icon.png","width":192,"height":192,"caption":"VOLE.wtf"},"image":{"@id":"https:\/\/vole.wtf\/#\/schema\/image\/icon"},"sameAs":["https:\/\/crispsandwi.ch\/@VOLEwtf","https:\/\/bsky.app\/profile\/vole.wtf","https:\/\/spacehey.com\/volewtf","https:\/\/www.tiktok.com\/@volewtf"]},{"@type":"WebSite","@id":"https:\/\/vole.wtf\/#\/schema\/website\/1","url":"https:\/\/vole.wtf\/","name":"VOLE.wtf","publisher":{"@id":"https:\/\/vole.wtf\/#\/schema\/organization\/1"}},{"@type":"WebPage","@id":"https:\/\/vole.wtf\/simons\/","url":"https:\/\/vole.wtf\/simons\/","inLanguage":"en-GB","name":"SIMONS \ud83d\udfe5\ud83d\udfe6\ud83d\udfe8\ud83d\udfe9 memory game","description":"Featuring Simon, Simon, Simon\u2026 and of course Simon.","image":{"@type":"ImageObject","@id":"https:\/\/vole.wtf\/simons\/social.jpg","url":"https:\/\/vole.wtf\/simons\/social.jpg","caption":"SIMONS \ud83d\udfe5\ud83d\udfe6\ud83d\udfe8\ud83d\udfe9 memory game"},"primaryImageOfPage":{"@id":"https:\/\/vole.wtf\/simons\/social.jpg"},"thumbnailUrl":"https:\/\/vole.wtf\/simons\/thumb.jpg","isPartOf":{"@id":"https:\/\/vole.wtf\/#\/schema\/website\/1"}}]}
+</script>
+
+<!-- 🆗 js present -->
+<script>
+	if ( (! document.all) && (window.requestAnimationFrame) ) document.documentElement.setAttribute('data-ok', '1');
+</script>
+
+<!-- 🚀 priority preloads -->
+<link rel="preload" href="/_common/common.css?v=1.82" as="style">
+<link rel="preload" href="/_common/sunday-comics.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/sunday-comics-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/disposable-digi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/common.js?v=1.82" as="script">
+<link rel="preload" href="/_common/common-audio2.js?v=1.82" as="script">
+
+<!-- 💈 styling -->
+<link rel="stylesheet" href="/_common/common.css?v=1.82">
+<style>
+	html {font-size: 9.5vmin;}@media (min-aspect-ratio: 3/4) {html {font-size: 7vmin;}}@media (max-aspect-ratio: 299/400) and (min-width: 632px) and (min-height: 632px) {html {font-size: 60px;}}@media (min-aspect-ratio: 3/4) and (min-width: 857px) and (min-height: 857px) {html {font-size: 60px;}}main {background: #412A0F url('main.jpg') center center no-repeat;background-size: cover;color: #ffffff;}.simon {display: none;font-family: '_fontPixel', sans-serif;font-size: 2rem;width: 6rem;height: 2rem;position: absolute;margin: -1rem 0 0 -3rem;text-transform: uppercase;text-align: center;line-height: 1;color: rgba(0,0,0,0.33);mix-blend-mode: soft-light;}.simon::before {content: 'Simon';}.simon + .simon {font-size: 4rem;width: 12rem;height: 4rem;margin: -2rem 0 0 -6rem;}.simon + .simon + .simon {font-size: 1rem;width: 3rem;height: 1rem;margin: -0.5rem 0 0 -1.5rem;}#console {width: 11rem;height: 11rem;position: absolute;top: calc(50% - 6.35rem - 30px);left: calc(50% - 5.5rem);-webkit-filter: drop-shadow(0.25rem 0.35rem 0.25rem rgba(48,24,0,0.8));filter: drop-shadow(0.25rem 0.35rem 0.25rem rgba(48,24,0,0.8));background: #181818;border-radius: 5.4rem;box-shadow: -0.15rem -0.2rem 0.15rem rgba(0,0,0,0.5) inset, 0.15rem 0.2rem 0.15rem rgba(255,255,255,0.2) inset;}header {width: 11rem;height: 11rem;position: absolute;top: calc(50% - 6.35rem - 30px);left: calc(50% - 5.5rem);z-index: 1;text-align: center;opacity: 0;pointer-events: none;-webkit-transition: opacity 1s;transition: opacity 1s;}header.on {opacity: 1;pointer-events: auto;}header h1 {font-family: '_fontPixel', sans-serif;font-size: 2.2rem;text-transform: lowercase;padding: 1.8rem 0 0.1rem 0;text-shadow: 0.07rem 0.07rem 0 #101010;}header p {width: 77%;margin: 0 auto 0.5rem auto;font-size: 0.6rem;line-height: 1.4;text-shadow: 0.07rem 0.07rem 0 #101010;}header button {box-shadow: 0 0 20px rgba(255,255,255,0.75);}section {font-family: '_fontPixel', sans-serif;width: 11rem;height: 11rem;position: absolute;top: calc(50% - 6.35rem - 30px);left: calc(50% - 5.5rem);}section ul {position: absolute;top: 0.7rem;left: 0.7rem;width: 9.6rem;height: 9.6rem;}section li {overflow: hidden;position: absolute;width: 4.6rem;height: 4.6rem;box-shadow: 0.05rem 0.1rem 0 rgba(0,0,0,0.5);background: #282828;pointer-events: none;}section.play li, section.gameOver li {pointer-events: auto;cursor: pointer;}section li span:nth-child(1), section li span:nth-child(2) {position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-size: 9.6rem 9.6rem;}section li span:nth-child(1) {background-image: url('simons-off.png');}section li span:nth-child(2) {opacity: 0.01;background-image: url('simons-on.png');}section li.on span:nth-child(2) {opacity: 1;}section li:nth-child(1) span:nth-child(1), section li:nth-child(1) span:nth-child(2) {background-color: #EE432A;background-position: left top;}section li:nth-child(2) span:nth-child(1), section li:nth-child(2) span:nth-child(2) {background-color: #0097E0;background-position: right top;}section li:nth-child(3) span:nth-child(1), section li:nth-child(3) span:nth-child(2) {background-color: #e0b803;background-position: right bottom;}section li:nth-child(4) span:nth-child(1), section li:nth-child(4) span:nth-child(2) {background-color: #00BB36;background-position: left bottom;}section li:nth-child(1) span:nth-child(1) {background-color: rgba(238,67,42,0.25);}section li:nth-child(2) span:nth-child(1) {background-color: rgba(0,151,224,0.25);}section li:nth-child(3) span:nth-child(1) {background-color: rgba(224,184,3,0.25);}section li:nth-child(4) span:nth-child(1) {background-color: rgba(0,187,54,0.25);}section li span:nth-child(3) {display: none;position: absolute;font-size: 0.6rem;text-shadow: 0 0 0.15rem currentColor;text-transform: uppercase;}section li.on span:nth-child(3) {display: block;}section li:nth-child(1) span:nth-child(3) {bottom: 1.5rem;right: 0.22rem;line-height: 0.8;text-align: center;}section li:nth-child(2) span:nth-child(3) {bottom: 0.05rem;right: 0.3rem;}section li:nth-child(3) span:nth-child(3) {top: 1.5rem;left: 0.22rem;line-height: 0.8;text-align: center;}section li:nth-child(4) span:nth-child(3) {top: 0.1rem;left: 0.25rem;}section li span:nth-child(4) {content: '';position: absolute;width: 100%;height: 100%;box-shadow: 0.07rem 0.1rem 0.15rem rgba(0,0,0,0.25) inset, 0.2rem 0.3rem 0.25rem rgba(255,255,255,0.25) inset, -0.2rem -0.3rem 0.25rem rgba(0,0,0,0.25) inset;}section li:nth-child(1), section li:nth-child(1) span:nth-child(4) {top: 0;left: 0;border-radius: 4.4rem 0.2rem 1.6rem 0.2rem;}section li:nth-child(2), section li:nth-child(2) span:nth-child(4) {top: 0;right: 0;border-radius: 0.2rem 4.4rem 0.2rem 1.6rem;}section li:nth-child(3), section li:nth-child(3) span:nth-child(4) {bottom: 0;right: 0;border-radius: 1.6rem 0.2rem 4.4rem 0.2rem;}section li:nth-child(4), section li:nth-child(4) span:nth-child(4) {bottom: 0;left: 0;border-radius: 0.2rem 1.6rem 0.2rem 4.4rem;}section li:nth-child(1) span:nth-child(4)::after {content: '';position: absolute;right: 0;bottom: 0;width: 1.2rem;height: 1.2rem;border-radius: 1.2rem 0 0 0;box-shadow: -0.2rem -0.3rem 0.25rem rgba(0,0,0,0.25);}section li:nth-child(2) span:nth-child(4)::after {content: '';position: absolute;left: 0;bottom: 0;width: 1.2rem;height: 1.2rem;border-radius: 0 1.2rem 0 0;box-shadow: 0 -0.25rem 0.25rem rgba(0,0,0,0.25);}section li:nth-child(3) span:nth-child(4)::after {content: '';position: absolute;left: 0;top: 0;width: 1.2rem;height: 1.2rem;border-radius: 0 0 1.2rem 0;box-shadow: 0.2rem 0.3rem 0.25rem rgba(255,255,255,0.25);}section li:nth-child(4) span:nth-child(4)::after {content: '';position: absolute;right: 0;top: 0;width: 1.2rem;height: 1.2rem;border-radius: 0 0 0 1.2rem;box-shadow: 0 0.25rem 0.25rem rgba(255,255,255,0.25);}section.gameOver li::after {position: absolute;font-size: 0.6rem;color: rgba(255,255,255,0.4);text-shadow: 0 0 0.15rem currentColor;text-transform: uppercase;left: 30%;right: 30%;top: 34%;text-align: center;content: 'play again';}section p {position: absolute;top: calc(5.5rem - 1.5rem);left: calc(50% - 1.5rem);width: 3rem;height: 3rem;border-radius: 1.5rem;background: #181818;}section p span {position: absolute;top: 0.3rem;left: 0.3rem;width: 2.4rem;height: 2.4rem;border-radius: 1.2rem;font-size: 1.2rem;text-align: center;color: #dddddd;background: #101010;text-shadow: 0 0 0.3rem currentColor;padding: 0.45rem 0 0 0;box-shadow: 0.02rem 0.03rem 0.05rem rgba(255,255,255,0.5) inset;}section a {display: none;}footer {display: none;font-weight: bold;font-size: 0.6rem;color: #000000;text-align: center;position: absolute;width: 8rem;left: calc(50% - 4rem);top: calc(50% + 4.8rem - 30px);mix-blend-mode: soft-light;}#_share {display: none;left: 0;right: 0;top: calc(50% + 5.4rem - 30px);-webkit-filter: drop-shadow(0.07rem 0.1rem 0.2rem rgba(48,24,0,0.9));filter: drop-shadow(0.07rem 0.1rem 0.2rem rgba(48,24,0,0.9));}#_loading {background: rgba(0,0,0,0.8);}
+</style>
+	
+</head>
+<body>
+	
+<div data-nosnippet><!-- 🤷 google workaround -->
+
+<main>
+	
+	<!-- ⏳ loading -->
+	<div id="_loading"></div>
+
+	
+	<!-- 🦁 main content -->
+
+	<div class="simon"></div><div class="simon"></div><div class="simon"></div>
+	<div id="console"></div>
+
+	<header data-fx="fx.mp3">
+		<h1>SIMONS</h1>
+		<p>Repeat the sequence you’re shown, starting with 1 Simon, then 2, then 3…</p>
+		<button>Easy, let’s go</button>
+	</header>
+
+	<section>
+		<h2 hidden>Simon…</h2>
+		<ul>
+			<li><span></span><span></span><span>C<br>o<br>w<br>e<br>l<br>l</span><span></span></li>
+			<li><span></span><span></span><span>Pegg</span><span></span></li>
+			<li><span></span><span></span><span>L<br>e<br> <br>B<br>o<br>n</span><span></span></li>
+			<li><span></span><span></span><span>Callow</span><span></span></li>
+		</ul>
+		<p><span></span></p>
+		<!--
+		<a href="#"><span>Press</span> <span>to</span> <span>play</span> <span>again</span></a>
+	-->
+	</section>
+
+	<footer data-message="I scored {score}, rating SIMON{rating}! Can you beat that?">
+		<p>Best score: <span></span></p>
+	</footer>
+
+
+	<!-- 👭 sharing -->
+	<div id="_share" data-_message="" data-_url=""><button id="_shareCopy">Copy</button><button id="_shareBluesky">Bluesky</button><button id="_shareWhatsApp">WhatsApp</button><button id="_shareMore">…</button></div>
+
+</main>
+
+
+<!-- 🎉 cross-promotion -->
+<aside id="_suggest" aria-hidden="true">
+	<div id="_promos">
+		<button>More Games</button>
+		<p></p>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blah/">About</a></li>
+			<li><a href="https://crispsandwi.ch/@VOLEwtf">Mastodon</a></li>
+			<li><a href="https://bsky.app/profile/vole.wtf">Bluesky</a></li>
+		</ul>
+	</div>
+</aside>
+
+
+<!-- 🍔 nav bar -->
+<div id="_nav">
+	<button aria-expanded="false" aria-controls="_navMenu">Toggle menu</button>
+	<nav id="_navMenu" aria-label="Main menu">
+		<ul role="list">
+			<li><a href="/">Home Page</a></li>
+			<li><a href="/blah/">info blah</a></li>
+			<li><a rel="me" href="https://crispsandwi.ch/@VOLEwtf">Mastodon</a></li>
+			<li><a href="https://bsky.app/profile/vole.wtf">Bluesky</a></li>
+			<li id="_navBuy"><a href="/buy-this-site/#buy-simons">Buy This Project</a></li>
+			<li id="_navDestroy" aria-hidden="true"><a href="#" data-_destroy-js="/_common/destroy/destroy.js?v=1.82" data-_destroy-css="/_common/destroy/destroy.css?v=1.82" data-_destroy-explosion="/_common/destroy/explosion.gif?v=1.82" data-_destroy-audio="/_common/destroy/explosives.mp3?v=1.82" title="Go on, you know you want to">Destroy this page</a></li>
+		</ul>
+		<ol role="list">
+			<li><a href="/glasses-cleaning/" data-new="1" data-updated="0"><img src="/glasses-cleaning/thumb.jpg?v=1.82" alt="Glasses Cleaning Simulator" loading="lazy" aria-hidden="true"><span>Glasses Cleaning Simulator</span></a></li>
+			<li><a href="/buy-this-site/" data-new="0" data-updated="0"><img src="/buy-this-site/thumb.jpg?v=1.82" alt="Buy This Site" loading="lazy" aria-hidden="true"><span>Buy This Site</span></a></li>
+			<li><a href="/potatocam/" data-new="0" data-updated="0"><img src="/potatocam/thumb.jpg?v=1.82" alt="PotatoCam" loading="lazy" aria-hidden="true"><span>PotatoCam</span></a></li>
+			<li><a href="/cool-s/" data-new="0" data-updated="0"><img src="/cool-s/thumb.jpg?v=1.82" alt="Can You Draw a Cool S ?" loading="lazy" aria-hidden="true"><span>Can You Draw a Cool S ?</span></a></li>
+			<li><a href="/doctype/" data-new="0" data-updated="0"><img src="/doctype/thumb.jpg?v=1.82" alt="DOCTYPE magazine" loading="lazy" aria-hidden="true"><span>DOCTYPE magazine</span></a></li>
+			<li><a href="/one-percent/" data-new="0" data-updated="0"><img src="/one-percent/thumb.jpg?v=1.82" alt="The 1% Guild" loading="lazy" aria-hidden="true"><span>The 1% Guild</span></a></li>
+			<li><a href="/crisp-sandwich-day/" data-new="0" data-updated="0"><img src="/crisp-sandwich-day/thumb.jpg?v=1.82" alt="Crisp Sandwich Day" loading="lazy" aria-hidden="true"><span>Crisp Sandwich Day</span></a></li>
+			<li><a href="/reload-clicker/" data-new="0" data-updated="0"><img src="/reload-clicker/thumb.jpg?v=1.82" alt="Reload Clicker" loading="lazy" aria-hidden="true"><span>Reload Clicker</span></a></li>
+			<li><a href="/gift-shop/" data-new="0" data-updated="0"><img src="/gift-shop/thumb.jpg?v=1.82" alt="Gift Shop" loading="lazy" aria-hidden="true"><span>Gift Shop</span></a></li>
+			<li><a href="/vtv/" data-new="0" data-updated="0"><img src="/vtv/thumb.jpg?v=1.82" alt="VTV music video station" loading="lazy" aria-hidden="true"><span>VTV music video station</span></a></li>
+			<li><a href="/celeb-clock/" data-new="0" data-updated="0"><img src="/celeb-clock/thumb.jpg?v=1.82" alt="Celeb Clock" loading="lazy" aria-hidden="true"><span>Celeb Clock</span></a></li>
+			<li><a href="/primesweeper/" data-new="0" data-updated="0"><img src="/primesweeper/thumb.jpg?v=1.82" alt="Primesweeper" loading="lazy" aria-hidden="true"><span>Primesweeper</span></a></li>
+			<li><a href="/overpriced-basic-url/" data-new="0" data-updated="0"><img src="/overpriced-basic-url/thumb.jpg?v=1.82" alt="OVERPRICED BASIC LINK" loading="lazy" aria-hidden="true"><span>OVERPRICED BASIC LINK</span></a></li>
+			<li><a href="/goalie/" data-new="0" data-updated="0"><img src="/goalie/thumb.jpg?v=1.82" alt="The Incredible Shrinking Goalie" loading="lazy" aria-hidden="true"><span>The Incredible Shrinking Goalie</span></a></li>
+			<li><a href="/how-punctual/" data-new="0" data-updated="0"><img src="/how-punctual/thumb.jpg?v=1.82" alt="How Punctual Are You?" loading="lazy" aria-hidden="true"><span>How Punctual Are You?</span></a></li>
+			<li><a href="/comic-sans-maps/" data-new="0" data-updated="0"><img src="/comic-sans-maps/thumb.jpg?v=1.82" alt="Comic Sans Maps" loading="lazy" aria-hidden="true"><span>Comic Sans Maps</span></a></li>
+			<li><a href="/selfie-shuffle/" data-new="0" data-updated="0"><img src="/selfie-shuffle/thumb.jpg?v=1.82" alt="Selfie Shuffle puzzle" loading="lazy" aria-hidden="true"><span>Selfie Shuffle puzzle</span></a></li>
+			<li><a href="/styscraper/" data-new="0" data-updated="0"><img src="/styscraper/thumb.jpg?v=1.82" alt="Styscraper - pig stacking game" loading="lazy" aria-hidden="true"><span>Styscraper - pig stacking game</span></a></li>
+			<li><a href="/stopormy-dot-mom/" data-new="0" data-updated="0"><img src="/stopormy-dot-mom/thumb.jpg?v=1.82" alt="Stop! Or My Mom Will Shoot fansite" loading="lazy" aria-hidden="true"><span>Stop! Or My Mom Will Shoot fansite</span></a></li>
+			<li><a href="/dog-poo-golf/" data-new="0" data-updated="0"><img src="/dog-poo-golf/thumb.jpg?v=1.82" alt="Dog Poo Golf" loading="lazy" aria-hidden="true"><span>Dog Poo Golf</span></a></li>
+			<li><a href="/british-teeth/" data-new="0" data-updated="0"><img src="/british-teeth/thumb.jpg?v=1.82" alt="How British Are Your Teeth?" loading="lazy" aria-hidden="true"><span>How British Are Your Teeth?</span></a></li>
+			<li><a href="/hellmouth/" data-new="0" data-updated="0"><img src="/hellmouth/thumb.jpg?v=1.82" alt="Hellmouth Finder" loading="lazy" aria-hidden="true"><span>Hellmouth Finder</span></a></li>
+			<li><a href="/daybrix/" data-new="0" data-updated="0"><img src="/daybrix/thumb.jpg?v=1.82" alt="DayBrix daily minigame" loading="lazy" aria-hidden="true"><span>DayBrix daily minigame</span></a></li>
+			<li><a href="/crow-flies/" data-new="0" data-updated="0"><img src="/crow-flies/thumb.jpg?v=1.82" alt="As The Crow Flies" loading="lazy" aria-hidden="true"><span>As The Crow Flies</span></a></li>
+			<li><a href="/raybees-font/" data-new="0" data-updated="0"><img src="/raybees-font/thumb.jpg?v=1.82" alt="Raybees Font v2" loading="lazy" aria-hidden="true"><span>Raybees Font v2</span></a></li>
+			<li><a href="/arcc/" data-new="0" data-updated="0"><img src="/arcc/thumb.jpg?v=1.82" alt="Apocalypse Recovery Computing Cluster" loading="lazy" aria-hidden="true"><span>Apocalypse Recovery Computing Cluster</span></a></li>
+			<li><a href="/british-seaside/" data-new="0" data-updated="0"><img src="/british-seaside/thumb.jpg?v=1.82" alt="British Seaside Simulator" loading="lazy" aria-hidden="true"><span>British Seaside Simulator</span></a></li>
+			<li><a href="/clone-a-lisa/" data-new="0" data-updated="0"><img src="/clone-a-lisa/thumb.jpg?v=1.82" alt="Clone-a Lisa forgery game" loading="lazy" aria-hidden="true"><span>Clone-a Lisa forgery game</span></a></li>
+			<li><a href="/biro-banana/" data-new="0" data-updated="0"><img src="/biro-banana/thumb.jpg?v=1.82" alt="Biro + Banana = Art" loading="lazy" aria-hidden="true"><span>Biro + Banana = Art</span></a></li>
+			<li><a href="/big-ben/" data-new="0" data-updated="0"><img src="/big-ben/thumb.jpg?v=1.82" alt="BIG BEN word game" loading="lazy" aria-hidden="true"><span>BIG BEN word game</span></a></li>
+			<li><a href="/britains-most-boring/" data-new="0" data-updated="0"><img src="/britains-most-boring/thumb.jpg?v=1.82" alt="Britain’s Most Boring" loading="lazy" aria-hidden="true"><span>Britain’s Most Boring</span></a></li>
+			<li><a href="/mastodon/" data-new="0" data-updated="0"><img src="/mastodon/thumb.jpg?v=1.82" alt="Join our Mastodon server" loading="lazy" aria-hidden="true"><span>Join our Mastodon server</span></a></li>
+			<li><a href="/voleflix/" data-new="0" data-updated="0"><img src="/voleflix/thumb.jpg?v=1.82" alt="Voleflix free movies" loading="lazy" aria-hidden="true"><span>Voleflix free movies</span></a></li>
+			<li><a href="/hampster-invaders/" data-new="0" data-updated="0"><img src="/hampster-invaders/thumb.jpg?v=1.82" alt="Hampster Invaders" loading="lazy" aria-hidden="true"><span>Hampster Invaders</span></a></li>
+			<li><a href="/kilogram/" data-new="0" data-updated="0"><img src="/kilogram/thumb.jpg?v=1.82" alt="Kilogram - 1KB photo site" loading="lazy" aria-hidden="true"><span>Kilogram - 1KB photo site</span></a></li>
+			<li><a href="/childhood-ambitions/" data-new="0" data-updated="0"><img src="/childhood-ambitions/thumb.jpg?v=1.82" alt="Childhood Ambitions …vs reality" loading="lazy" aria-hidden="true"><span>Childhood Ambitions …vs reality</span></a></li>
+			<li><a href="/imaginary-friends/" data-new="0" data-updated="0"><img src="/imaginary-friends/thumb.jpg?v=1.82" alt="Imaginary Friends Reunited" loading="lazy" aria-hidden="true"><span>Imaginary Friends Reunited</span></a></li>
+			<li><a href="/ganksy/" data-new="0" data-updated="0"><img src="/ganksy/thumb.jpg?v=1.82" alt="GANksy A.I. street artist" loading="lazy" aria-hidden="true"><span>GANksy A.I. street artist</span></a></li>
+			<li><a href="/penga/" data-new="0" data-updated="0"><img src="/penga/thumb.jpg?v=1.82" alt="Penga - penguin physics game" loading="lazy" aria-hidden="true"><span>Penga - penguin physics game</span></a></li>
+			<li><a href="/bokeh/" data-new="0" data-updated="0"><img src="/bokeh/thumb.jpg?v=1.82" alt="BOKEH game" loading="lazy" aria-hidden="true"><span>BOKEH game</span></a></li>
+			<li><a href="/vmail/" data-new="0" data-updated="0"><img src="/vmail/thumb.jpg?v=1.82" alt="Vmail - our email newsletter" loading="lazy" aria-hidden="true"><span>Vmail - our email newsletter</span></a></li>
+			<li><a href="/triple-tautonyms/" data-new="0" data-updated="0"><img src="/triple-tautonyms/thumb.jpg?v=1.82" alt="Triple Tautonyms" loading="lazy" aria-hidden="true"><span>Triple Tautonyms</span></a></li>
+			<li><a href="/clickbait-genius/" data-new="0" data-updated="0"><img src="/clickbait-genius/thumb.jpg?v=1.82" alt="Are You a Clickbait Genius?" loading="lazy" aria-hidden="true"><span>Are You a Clickbait Genius?</span></a></li>
+			<li><a href="/buttystock/" data-new="0" data-updated="0"><img src="/buttystock/thumb.jpg?v=1.82" alt="ButtyStock" loading="lazy" aria-hidden="true"><span>ButtyStock</span></a></li>
+			<li><a href="/buttystock/ar/" data-new="0" data-updated="0"><img src="/buttystock/ar/thumb.jpg?v=1.82" alt="Augmented Reality Crisp Sandwich" loading="lazy" aria-hidden="true"><span>Augmented Reality Crisp Sandwich</span></a></li>
+			<li><a href="/freddo/" data-new="0" data-updated="0"><img src="/freddo/thumb.jpg?v=1.82" alt="World’s Biggest Freddo" loading="lazy" aria-hidden="true"><span>World’s Biggest Freddo</span></a></li>
+			<li><a href="/kilobytes-gambit/" data-new="0" data-updated="0"><img src="/kilobytes-gambit/thumb.jpg?v=1.82" alt="The Kilobyte’s Gambit" loading="lazy" aria-hidden="true"><span>The Kilobyte’s Gambit</span></a></li>
+			<li><a href="/happy-birthday/" data-new="0" data-updated="0"><img src="/happy-birthday/thumb.jpg?v=1.82" alt="Happy Birthday To You public domain" loading="lazy" aria-hidden="true"><span>Happy Birthday To You public domain</span></a></li>
+			<li><a href="/trudgecast/" data-new="0" data-updated="0"><img src="/trudgecast/thumb.jpg?v=1.82" alt="TrudgeCast podcast" loading="lazy" aria-hidden="true"><span>TrudgeCast podcast</span></a></li>
+			<li><a href="/this-mp-does-not-exist/" data-new="0" data-updated="0"><img src="/this-mp-does-not-exist/thumb.jpg?v=1.82" alt="This MP Does Not Exist" loading="lazy" aria-hidden="true"><span>This MP Does Not Exist</span></a></li>
+			<li><a href="/scunthorpe-sans/" data-new="0" data-updated="0"><img src="/scunthorpe-sans/thumb.jpg?v=1.82" alt="Scunthorpe Sans" loading="lazy" aria-hidden="true"><span>Scunthorpe Sans</span></a></li>
+			<li><a href="/webcam-age/" data-new="0" data-updated="0"><img src="/webcam-age/thumb.jpg?v=1.82" alt="What’s Your Webcam Age?" loading="lazy" aria-hidden="true"><span>What’s Your Webcam Age?</span></a></li>
+			<li><a href="/death-roulette/" data-new="0" data-updated="0"><img src="/death-roulette/thumb.jpg?v=1.82" alt="17th Century Death Roulette" loading="lazy" aria-hidden="true"><span>17th Century Death Roulette</span></a></li>
+			<li><a href="/avocado-n-toast/" data-new="0" data-updated="0"><img src="/avocado-n-toast/thumb.jpg?v=1.82" alt="Avocado’n’Toast comic generator" loading="lazy" aria-hidden="true"><span>Avocado’n’Toast comic generator</span></a></li>
+			<li><a href="/how-disgusting/" data-new="0" data-updated="0"><img src="/how-disgusting/thumb.jpg?v=1.82" alt="How DISGUSTING Are You?" loading="lazy" aria-hidden="true"><span>How DISGUSTING Are You?</span></a></li>
+			<li><a href="/simons/" data-new="0" data-updated="0"><img src="/simons/thumb.jpg?v=1.82" alt="SIMONS memory game" loading="lazy" aria-hidden="true"><span>SIMONS memory game</span></a></li>
+			<li><a href="/high-notes/" data-new="0" data-updated="0"><img src="/high-notes/thumb.jpg?v=1.82" alt="Hit the High Notes" loading="lazy" aria-hidden="true"><span>Hit the High Notes</span></a></li>
+			<li><a href="/calm-down-britain/" data-new="0" data-updated="0"><img src="/calm-down-britain/thumb.jpg?v=1.82" alt="Calm Down Britain" loading="lazy" aria-hidden="true"><span>Calm Down Britain</span></a></li>
+			<li><a href="/cydapc-moved/" data-new="0" data-updated="0"><img src="/cydapc-moved/thumb.jpg?v=1.82" alt="Can You Draw a Perfect Circle?" loading="lazy" aria-hidden="true"><span>Can You Draw a Perfect Circle?</span></a></li>
+			<li><a href="/dog-breeds/" data-new="0" data-updated="0"><img src="/dog-breeds/thumb.jpg?v=1.82" alt="Dog Breeds Chart" loading="lazy" aria-hidden="true"><span>Dog Breeds Chart</span></a></li>
+			<li><a href="/sleep-animal/" data-new="0" data-updated="0"><img src="/sleep-animal/thumb.jpg?v=1.82" alt="What’s Your Sleep Animal?" loading="lazy" aria-hidden="true"><span>What’s Your Sleep Animal?</span></a></li>
+			<li><a href="/goth-or-moth/" data-new="0" data-updated="0"><img src="/goth-or-moth/thumb.jpg?v=1.82" alt="Goth or Moth?" loading="lazy" aria-hidden="true"><span>Goth or Moth?</span></a></li>
+			<li><a href="/plaiceholder-images/" data-new="0" data-updated="0"><img src="/plaiceholder-images/thumb.jpg?v=1.82" alt="Plaiceholder Images" loading="lazy" aria-hidden="true"><span>Plaiceholder Images</span></a></li>
+			<li><a href="/kick-the-ball-back/" data-new="0" data-updated="0"><img src="/kick-the-ball-back/thumb.jpg?v=1.82" alt="Kick the Ball Back" loading="lazy" aria-hidden="true"><span>Kick the Ball Back</span></a></li>
+			<li><a href="/they-walk-among-us/" data-new="0" data-updated="0"><img src="/they-walk-among-us/thumb.jpg?v=1.82" alt="They Walk Among Us" loading="lazy" aria-hidden="true"><span>They Walk Among Us</span></a></li>
+			<li><a href="/work-reply-soundboard/" data-new="0" data-updated="0"><img src="/work-reply-soundboard/thumb.jpg?v=1.82" alt="Work Reply Soundboard" loading="lazy" aria-hidden="true"><span>Work Reply Soundboard</span></a></li>
+			<li><a href="/text-generator/" data-new="0" data-updated="0"><img src="/text-generator/thumb.jpg?v=1.82" alt="Text Generator" loading="lazy" aria-hidden="true"><span>Text Generator</span></a></li>
+			<li><a href="/coder-serial-killer-quiz/" data-new="0" data-updated="0"><img src="/coder-serial-killer-quiz/thumb.jpg?v=1.82" alt="Programming Language Inventor or Serial Killer?" loading="lazy" aria-hidden="true"><span>Programming Language Inventor or Serial Killer?</span></a></li>
+		</ol>
+	</nav>
+	<p><input type="checkbox" id="_navSound" checked hidden><label for="_navSound">Toggle sound</label></p>
+</div>
+
+<!-- 🧳 must-wait-for preloads -->
+<div id="_preloads" aria-hidden="true"><span>v</span><span>o</span><span>l</span><span>e</span><img src="main.jpg" alt="" loading="eager"><img src="simons-off.png" alt="" loading="eager"><img src="simons-on.png" alt="" loading="eager"></div>
+
+
+<!-- 💬 alert dialog -->
+<dialog id="_alert">
+  <p></p>
+  <form method="dialog">
+	<button>Close</button>
+  </form>
+</dialog>
+
+
+<!-- 🫨 haptics hack -->
+<label id="_buzz" aria-hidden="true" hidden><input type="checkbox" switch></label>
+
+
+</div><!-- 🤷 google workaround -->
+
+
+<!-- 💾 scripting -->
+<script src="/_common/common.js?v=1.82"></script>
+<script src="/_common/common-audio2.js?v=1.82"></script>
+<script>
+	$(window).on('load', function() {fx = new Howl({src: [$('header').attr('data-fx')],volume: 1,sprite: {simon0: [502, 474],simon1: [1469, 435],simon2: [2393, 395],simon3: [3279, 532],wrong: [4319, 300]},onload: function() {$('#_loading').hide();setTimeout(function() {$('header').addClass('on');}, 500);}});});$('header button').on('click', function() {$(this).hide();$('header').removeClass('on');setTimeout(gameStart, 1000);return false;});var simonCount = 0;function simon() {$('.simon').eq(simonCount).css('left', String(100*Math.random()) + '%').css('top', String(100*Math.random()) + '%').show();simonCount = (simonCount + 1) % 3;}var firstGo = true;var scoreHigh = parseFloat(_VOLE.localStorage.getItem('simons') ?? 0);var score;var sequence;var progress;function gameStart() {score = 0;sequence = [];$('section').removeClass('gameOver');$('section p span').text('');$('footer, #_share').hide();setTimeout(sequenceNext, 500);}function sequenceNext() {sequence.push(Math.floor(3.999*Math.random()));if (sequence.length == 2) {if (sequence[0] == sequence[1]) {sequence[1] = (sequence[0] + 1 + Math.floor(2.999*Math.random())) % 4;}}progress = 0;noteStart();}function noteDelay() {if ( (firstGo) && (progress == 0) && (sequence.length == 1) ) {return 1000;}return 200 + (15 - Math.min(sequence.length, 15))*20;}function noteStart() {fx.play('simon' + String(sequence[progress]));simon();$('section ul li').eq(sequence[progress]).addClass('on');setTimeout(function() {$('section li').removeClass('on');progress ++;if (progress == sequence.length) {progress = 0;$('section').addClass('play');} else {setTimeout(noteStart, 200 + noteDelay()/10);}}, noteDelay());}var pressTimer = 0;$('section li').on('mousedown touchstart', function() {if ($('section').hasClass('gameOver')) {gameStart();return false;}clearTimeout(pressTimer);$('section li').removeClass('on');if ($(this).index() == sequence[progress]) {fx.play('simon' + String(sequence[progress]));simon();$(this).addClass('on');progress ++;pressTimer = setTimeout(function() {$('section li').removeClass('on');}, noteDelay());if (progress == sequence.length) {$('section').removeClass('play');score = progress;$('section p span').text(score);setTimeout(sequenceNext, noteDelay() + 1000);}} else {firstGo = false;fx.play('wrong');$('.simon').hide();$('section').removeClass('play');$('section p span').text('XXX');setTimeout(function() {if (score > scoreHigh) {scoreHigh = score;_VOLE.localStorage.setItem('simons', scoreHigh);}$('footer p span').text(scoreHigh);var r = String('NNNNNNNNNNNNNNNNNNNN').substring(0, Math.floor(score/2)) + String('!!!!!!!!!!').substring(0, Math.floor(score/3));var m = $('footer').attr('data-message').replace('{score}', score).replace('{rating}', r);$('#_share').attr('data-_message', m);$('section p span').text(score);$('footer, #_share').show();setTimeout(function() {$('section').addClass('gameOver');}, 500);}, 1000);}return false;});
+</script>
+
+
+<!-- 📊 analytics -->
+<script>
+	window.fathom = { trackGoal: function(a,b){} };
+</script>
+<script src="https://cdn.usefathom.com/script.js" data-site="RBWKC" defer></script>
+
+
+<!-- ⏱ 0.0012 -->
+</body>
+</html>
